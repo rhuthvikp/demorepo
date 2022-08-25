@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regimen Analysis Smoke Test Suite" parallel="false">
+    <listeners>
+        <listener class-name="com.mck.rp.listeners.ExtentReportListener"/>
+        <listener class-name="com.mck.rp.listeners.allure.AllureReportListener"/>
+        <!--  <listener class-name="com.mck.rp.listeners.AnnotationTransformer"/>  -->
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="Regimen Profiler - Smoke Tests">
+        <!--
+                <groups>
+                    <run>
+                        <include name="smoke"/>
+                    </run>
+                </groups>
+        -->
+        <classes>
+
+            <class name="com.mck.rp.tetscases.SampleTests.PracticeAnalysis.PracticeAnalysisSmokeTest"/>
+            <class name="com.mck.rp.tetscases.SampleTests.PatientAnalysis.PatientAnalysisSmokeTest"/>
+
+        </classes>
+
+    </test>
+</suite>

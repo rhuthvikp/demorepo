@@ -1,0 +1,11 @@
+.allure
+.gradle
+.idea
+build/*
+.DS_Store
+allure-results
+extentReports
+out
+test-output
+src/test/resources/Downloads/*
+.zshrc
